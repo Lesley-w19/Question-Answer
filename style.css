@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.questions{
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgba(100, 148, 237, 0.363);
+}
+.title{
+    /* margin: 0rem auto 2rem auto; */
+    padding: .5rem ;
+    text-align: center;
+}
+.title h2{
+    margin: 5rem auto .1rem auto;
+    font-family: Forte;
+    text-transform: capitalize;
+    font-size: 1.8rem;
+    color: rgba(121, 5, 28, 0.897);
+}
+.uline{
+    width: 7vw;
+   height: .15rem;
+   margin: .1rem auto;
+   background-color: rgba(121, 5, 28, 0.746);
+    
+}
+.questions-wrapper{
+    display: grid;
+    place-items: center;
+    width: 55vw;
+    margin: .3rem auto 1rem auto;
+   background-color: rgba(255, 248, 220, 0.794);
+   box-shadow: .1rem .5rem 1rem rgba(34, 34, 34, 0.432);
+   border-radius: .2rem;
+}
+ .question{
+     padding: .3rem .6rem;
+   display: inline-block;
+}
+
+.question-title{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: .3rem 2rem;
+} 
+.question-title p{
+    margin: .1rem 15rem .1rem .2rem;
+    font-size: 1rem;
+    color: maroon;
+    text-transform: capitalize;
+    letter-spacing: .05rem;
+    font-family: acme;
+    justify-content: space-between;
+}
+.question-btn{
+    border-color: transparent;
+    outline: none;
+    background: transparent;
+    cursor: pointer;
+    transition: .4s ease-in-out;
+}
+.question-btn .fa{
+    margin: .1rem;
+    color: rgba(121, 5, 28, 0.897);
+    font-size: 1.4rem;
+}
+.question-btn:hover{
+    transform: rotate(-180deg);
+}
+
+.question-text{
+    padding: .2rem;
+    margin: .2rem .5rem;
+    border-top: .1rem solid #959191;
+}
+.question-text p{
+    margin-top: .5rem;
+    font-size: .85rem;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   color: rgb(131, 112, 131);
+}
+
+
+
+
+/* hide */
+
+.question-text{
+    display: none;
+}
+.show-text .question-text{
+    display: block;
+}
+.minus{
+    display: none;
+}
+.show-text .minus{
+    display: inline;
+}
+.show-text .plus{
+    display: none;
+}
+
+
+@media screen and (max-width:1110px){
+    .questions-wrapper{
+      width: 80vw;
+    }
+    .question-title p{
+        margin: .1rem 2rem .1rem .2rem;
+        font-size: .95rem;
+     }
+     .question-text{
+     font-size: .8rem ;
+}
+}
+
+
+@media screen and (max-width:520px){
+.questions-wrapper{
+    width: 90vw;
+}
+.question-title p{
+   margin: .1rem 2rem .1rem .2rem;
+   font-size: .85rem;
+}
+.question-text{
+font-size: .7rem;
+}
+}
